@@ -1,0 +1,44 @@
+
+.container{
+  width: 600px;
+  height: 650px;
+  font-size: 22px;
+  margin-top: 3%;
+  margin-left: 33%;
+  background-image: url("back.jpg");
+
+  background-size: cover;
+}
+input.ng-invalid.ng-touched{
+  border: 1px solid red;
+}
+.form-group{
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+}
+input{
+  width: 150%;
+  border-width: medium;
+  height: 20%;
+
+}
+.register{
+  margin-left: 38%;
+  color: black;
+  font-size: 33px;
+
+}
+.submit{
+  margin-left: 27%;
+}
+button{
+  width: 200px;
+  height: 15%;
+  margin-left: 100px;
+
+}
+.btn btn-primary{
+  color: black;
+}
+

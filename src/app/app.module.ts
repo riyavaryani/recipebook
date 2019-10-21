@@ -2,27 +2,27 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import {HeaderComponent} from './header/header.component';
-import { RecipeComponent } from './recipe/recipe.component';
-import { RecipeListComponent } from './recipe/recipe-list/recipe-list.component';
-import { RecipeDetailsComponent } from './recipe/recipe-details/recipe-details.component';
-import { RecipeItemComponent } from './recipe/recipe-list/recipe-item/recipe-item.component';
-import { ShoppingListComponent } from './shopping-list/shopping-list.component';
-import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
+import {ReactiveFormsModule} from '@angular/forms';
+import {ServiceComponent} from './service/service.component';
+import {RegisterComponent} from './register/register.component';
+import {Route, RouterModule, Routes} from '@angular/router';
+
+
+const appRoutes: Routes = [
+  {  path: 'service' , component: ServiceComponent },
+  { path: '' , component: RegisterComponent}
+];
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    RecipeComponent,
-    RecipeListComponent,
-    RecipeDetailsComponent,
-    RecipeItemComponent,
-    ShoppingListComponent,
-    ShoppingEditComponent,
+    ServiceComponent,
+    RegisterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ReactiveFormsModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
